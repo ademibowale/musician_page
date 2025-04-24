@@ -182,15 +182,20 @@ document.addEventListener("DOMContentLoaded", () => {
         const ticketId = "TICKET-" + Math.floor(Math.random() * 1000000);
 
         // Automatically trigger ticket download
-        const ticketData = {
-          ticketId,
-          name,
-          email,
-          concert,
-          payment,
-          ticketType: "VIP", // Example, modify according to your data
-          ticketPrice: 300, // Example price
-        };
+        const selected = JSON.parse(localStorage.getItem("selectedTickets"))?.[0] || {};
+const ticketType = selected.type || "Unknown";
+const ticketPrice = selected.price || "Unknown";
+
+const ticketData = {
+  ticketId,
+  name,
+  email,
+  concert,
+  payment,
+  ticketType,
+  ticketPrice,
+};
+
 
         generatePDFTicket(ticketData);
 
