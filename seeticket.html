@@ -19,8 +19,8 @@
   </header>
 
   <div class="container">
-    <div class="ticket-card">
-      <div class="badge">Cheapest</div>
+    <div class="ticket-card" onclick="selectTicket('General Admission', 134)" >
+       <div class="badge">Cheapest</div>
       <div class="info">
         <div class="type">General Admission</div>
         <div class="desc">1 ticket</div>
@@ -28,7 +28,9 @@
       <div class="price">$134 <span>each</span></div>
     </div>
 
-    <div class="ticket-card sold">
+    <div class="ticket-card sold" onclick="selectTicket('GENEL ALAN', 250)">
+      
+
       <div class="info">
         <div class="type">GENEL ALAN</div>
         <div class="desc">1 ticket • Standing only</div>
@@ -36,7 +38,8 @@
       <div class="price">$250 <span>each</span></div>
     </div>
 
-    <div class="ticket-card sold">
+    <div class="ticket-card sold"onclick="selectTicket('GENEL ALAN', 250)"  >
+    
       <div class="info">
         <div class="type">GENEL ALAN</div>
         <div class="desc">1 ticket • Standing only</div>
@@ -45,8 +48,8 @@
     </div>
 
 
-    <div class="ticket-card sold">
-      <div class="info">
+    <div class="ticket-card sold"onclick="selectTicket('General Admission', 136)" >
+        <div class="info">
         <div class="type strikethrough">GENEL ALAN</div>
         <div class="desc"><strong>Row: Muk</strong></div>
       </div>
@@ -57,8 +60,8 @@
     <!-- Additional ticket cards... -->
     
     
-        <div class="ticket-card viewed">
-          <div class="info">
+        <div class="ticket-card viewed" onclick="selectTicket('General Admission', 300)">
+             <div class="info">
             <div class="type">General Admission</div>
             <div class="desc">1 ticket</div>
             <div class="viewed-badge">Viewed</div>
@@ -67,8 +70,8 @@
         </div>
 
         <!-- <div class="container"> -->
-          <div class="ticket-card">
-            <div class="info">
+          <div class="ticket-card" onclick="selectTicket('General Admission', 178)">
+              <div class="info">
               <div class="type">General Admission</div>
               <p>1 ticket</p>
               <p class="remaining pink">3 tickets remaining in this listing on our site</p>
@@ -79,8 +82,8 @@
             </div>
           </div>
       
-          <div class="ticket-card">
-            <div class="info">
+          <div class="ticket-card" onclick="selectTicket('General Admission', 184)" >
+              <div class="info">
               <div class="type">General Admission</div>
               <p>1 ticket</p>
               <p class="remaining pink">2 tickets remaining in this listing on our site</p>
@@ -91,8 +94,8 @@
             </div>
           </div>
       
-          <div class="ticket-card">
-            <div class="ticket-info">
+          <div class="ticket-card" onclick="selectTicket('General Admission', 187)" >
+              <div class="ticket-info">
               <div class="type">General Admission</div>
               <p>1 ticket</p>
               <div class="ticket-tags">
@@ -107,8 +110,8 @@
             </div>
           </div>
       
-          <div class="ticket-card">
-            <div class="ticket-info">
+          <div class="ticket-card" onclick="selectTicket('General Admission', 267)" >
+              <div class="ticket-info">
               <div class="type">General Admission</div>
               <p>1 ticket</p>
               <p class="remaining pink">1 ticket remaining in this listing on our site</p>
