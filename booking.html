@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jennifer Lopez | Book Tickets</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <h1>Jennifer Lopez</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="live.html">Live Concerts</a></li>
+        <li><a href="booking.html">Book Ticket</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="booking">
+    <section>
+      <h2>Book Your Ticket</h2>
+      <p>Please fill in the form below and upload a screenshot of your payment receipt.</p>
+      
+      <!-- Booking form -->
+      <form action="#" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="Enter your email address">
+        </div>
+
+        <div class="form-group">
+          <label for="payment-method">Payment Method:</label>
+          <select id="payment-method" name="payment-method" required>
+            <option value="paypal">PayPal</option>
+            <option value="giftcard">Gift Card</option>
+            <option value="usdt">Crypto (USDT TRC20)</option>
+          </select>
+        </div>
+
+        <div class="usdt-info">
+          <p><strong>USDT TRC20 Wallet Address:</strong> <code>TX9hKQZkPjQ8PvE91FwkgKbAwkA5dT2x9A</code></p>
+          <p>Please copy this wallet address and complete your payment before uploading the screenshot.</p>
+        </div>
+
+        <div class="form-group">
+          <label for="receipt">Upload Payment Screenshot:</label>
+          <input type="file" id="receipt" name="receipt" accept="image/*" required>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Booking</button>
+      </form>
+
+      <!-- Ticket type and price display -->
+      <div class="ticket-info">
+        <h3>Your Ticket:</h3>
+        <p id="ticket-type">Ticket Type: Loading...</p>
+        <p id="ticket-price">Price: Loading...</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Jennifer Lopez Official. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

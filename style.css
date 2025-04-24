@@ -1,0 +1,248 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: orange;
+  background-image: url('images/jlo-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+
+.navbar h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: gold;
+}
+
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 50vh; /* Set initial height */
+}
+
+.hero img.background-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+}
+
+/* Biography Section */
+.biography {
+  margin-top: 2rem;
+}
+
+.biography h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.bio-photos {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.bio-photos img {
+  width: 48%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Awards Section */
+.awards {
+  margin-top: 2rem;
+}
+
+.awards h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.award-photos {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.award-photos img {
+  width: 48%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .navbar h1 {
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    float: none;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .nav-links li {
+    display: block;
+    margin-left: 0;
+  }
+
+  .hero {
+    height: 40vh; /* Reduce hero height on smaller screens */
+  }
+
+  .hero-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .bio-photos img,
+  .award-photos img {
+    width: 48%; /* Stack images vertically on small screens */
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Button Styles */
+button.submit-btn {
+  background-color: #ffa600;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+}
+
+button.submit-btn:hover {
+  background-color: #b35100;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 400px;
+  position: relative;
+}
+
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #000;
+}
+
